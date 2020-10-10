@@ -10,12 +10,23 @@ header {
     margin-bottom: 156px;
 }
 
-.navigation {
+.section {
+    margin: 0 auto;
+    margin-bottom: 150px;
+}
+
+.header__navigation {
+
     background: rgba(0, 91, 193, 0.6);
-    display: flex;
+}
+
+.navigation {
     height: 80px;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    max-width: 1130px;
+    margin-left: 40px;
 }
 
 .menu {
@@ -23,11 +34,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
 
 }
 
-.menu li a {
+.menu__item-link {
     font-family: Open Sans;
     font-style: normal;
     font-weight: 600;
@@ -35,7 +45,11 @@ header {
     line-height: 19px;
 }
 
-.menu li {
+.menu__item:nth-child(5) {
+    padding-right: 0px;
+}
+
+.menu__item {
     padding-right: 26px;
 }
 
@@ -116,7 +130,6 @@ header {
 
 /* ------------------ourproject style------------------- */
 .our-project {
-    margin: 0 auto 150px;
     position: relative;
     max-width: 1110px;
     height: 520px;
@@ -151,20 +164,22 @@ header {
     height: 3px;
     /* высота самого блока */
     background: #005BC1;
-        /* задаём нужный цвет фоном */
+    /* задаём нужный цвет фоном */
     left: 0;
-    
+
 }
-.our-project__title::after{
+
+.our-project__title::after {
     content: "";
     display: block;
     position: absolute;
-    top:37px;
-    width:50px;
+    top: 37px;
+    width: 50px;
     left: 50px;
     height: 3px;
-    background:#005BC1;
+    background: #005BC1;
 }
+
 .our-project__content {
     position: relative;
     display: flex;
@@ -221,4 +236,302 @@ header {
     color: #343434;
     margin-left: 25px;
     margin-right: 25px;
+}
+
+/* --------------------------Product-catalog style--------------- */
+.product-catalog {
+    width: 1100px;
+    height: 505px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-catalog__title {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    /* black */
+    color: #343434;
+    padding-bottom: 70px;
+    padding-left: 140px;
+    padding-top: 6px;
+}
+
+.product-catalog__title::before {
+    content: "";
+    /* создаём инлайн объект */
+    display: block;
+    /* преобразуем его в блочный */
+    position: absolute;
+    /* включаем асболютное позиционирование */
+    top: 24px;
+    /*отступ будет 0 пикселей от верхней точки блока */
+    width: 100px;
+    /* блок займёт по ширине 10% ширины родительского */
+    height: 3px;
+    /* высота самого блока */
+    background: #005BC1;
+    /* задаём нужный цвет фоном */
+    left: 0;
+
+}
+
+.product-catalog__title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 37px;
+    width: 50px;
+    left: 50px;
+    height: 3px;
+    background: #005BC1;
+}
+
+.product-catalog__subtitle {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 55px;
+}
+
+.product-catalog__item_active {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #005BC1;
+    margin-right: 47px;
+    width: 52px;
+    height: 36px;
+
+}
+
+.product-catalog__item_active::before {
+    content: "";
+    /* создаём инлайн объект */
+    display: block;
+    /* преобразуем его в блочный */
+    position: absolute;
+    /* включаем асболютное позиционирование */
+    top: 41px;
+    /*отступ будет 0 пикселей от верхней точки блока */
+    width: 53px;
+    /* блок займёт по ширине 10% ширины родительского */
+    height: 2px;
+    /* высота самого блока */
+    background: #005BC1;
+    /* задаём нужный цвет фоном */
+    left: 443px;
+
+}
+
+.product-catalog__item_inactive {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    /* black */
+    color: #343434;
+    width: 111px;
+    height: 36px;
+}
+
+.product-catalog__img {
+    width: 350px;
+    height: 300px;
+}
+
+.product-catalog__column {
+    border: 3px solid #005BC1;
+    flex: 1 1 auto;
+    margin: 0 30px;
+    position: relative;
+}
+
+.product-catalog__row {
+    display: flex;
+    flex-direction: row;
+    margin: 0 -30px;
+}
+
+.product-catalog__signature {
+    position: absolute;
+    width: 265px;
+    height: 86px;
+    left: 85px;
+    top: 199px;
+    background: #005BC1;
+    display: flex;
+    align-items: center;
+}
+
+.product-catalog__signature_title {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 21px;
+    width: 208px;
+
+}
+
+/* -------------------Equipment rent------------------------ */
+.equipment-rent {
+    width: 1100px;
+    height: 478px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.equipment-rent__title {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    /* black */
+    color: #343434;
+    padding-bottom: 40px;
+    padding-left: 140px;
+    padding-top: 6px;
+}
+
+.equipment-rent__title::before {
+    content: "";
+    /* создаём инлайн объект */
+    display: block;
+    /* преобразуем его в блочный */
+    position: absolute;
+    /* включаем асболютное позиционирование */
+    top: 24px;
+    /*отступ будет 0 пикселей от верхней точки блока */
+    width: 100px;
+    /* блок займёт по ширине 10% ширины родительского */
+    height: 3px;
+    /* высота самого блока */
+    background: #005BC1;
+    /* задаём нужный цвет фоном */
+    left: 0;
+
+}
+
+.equipment-rent__title::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 37px;
+    width: 50px;
+    left: 50px;
+    height: 3px;
+    background: #005BC1;
+}
+
+.equipment-rent__content {
+    display: flex;
+}
+
+.equipment-rent__container {
+    display: flex;
+    align-items: center;
+}
+
+.equipment-rent__text {
+    width: 350px;
+    height: 175px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    /* black */
+    color: #343434;
+    padding-right: 95px;
+}
+
+.equipment-rent__slide {
+    border: 3px solid #005BC1;
+    position: relative;
+}
+
+.equipment-rent__slide_title {
+    width: 441px;
+    height: 27px;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    /* black */
+    color: #343434;
+    margin-top: 42px;
+    margin-left: 30px;
+    margin-bottom: 45px;
+}
+
+.equipment-rent__slide_content {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+
+.equipment-rent__slide_img {
+    width: 255px;
+    height: 250px;
+    margin-right: 30px;
+}
+
+.equipment-rent__slide_subtitle-link {
+    width: 172px;
+    height: 24px;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #343434;
+}
+
+.equipment-rent__item {
+    width: 310px;
+    height: 152px;
+    padding-inline-start: 16px;
+}
+
+.equipment-rent__item_link {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+    color: #343434;
+    margin-bottom: 19px;
+}
+
+.equipment-rent__item_link:nth-child(4) {
+    margin-bottom: 0;
 }

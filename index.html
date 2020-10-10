@@ -11,16 +11,18 @@
 <body>
     <header class="header">
         <div class="header__container">
-            <nav class="navigation">
-                <a href="javascript:void(0)"><img src="img/logo.svg" alt="Translight"></a>
-                <ul class="menu">
-                    <li><a href="javascript:void(0)">О компании</a></li>
-                    <li><a href="javascript:void(0)">Портфолио</a></li>
-                    <li><a href="javascript:void(0)">Каталог</a></li>
-                    <li><a href="javascript:void(0)">Сервис</a></li>
-                    <li><a href="javascript:void(0)">Контакты</a></li>
-                </ul>
-            </nav>
+            <div class="header__navigation">
+                <nav class="navigation">
+                    <a href="javascript:void(0)"><img src="img/logo.svg" alt="Translight"></a>
+                   <ul class="menu">
+                        <li class="menu__item"><a href="javascript:void(0)" class="menu__item-link">О компании</a></li>
+                        <li class="menu__item"><a href="javascript:void(0)" class="menu__item-link">Портфолио</a></li>
+                        <li class="menu__item"><a href="javascript:void(0)" class="menu__item-link">Каталог</a></li>
+                        <li class="menu__item"><a href="javascript:void(0)" class="menu__item-link">Сервис</a></li>
+                        <li class="menu__item"><a href="javascript:void(0)" class="menu__item-link">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
         <div class="header__restangle">
             <div class="header__subrestangle">
@@ -30,20 +32,63 @@
             </div>
         </div>
     </header>
-    <section class="our-project">
+    <section class="our-project section">
         <div class="our-project__title">Наши проекты</div>
         <div class="our-project__content">
-            <div class="our-project__slide"> <img src="img/people-exhibition.svg" alt="people on exhibition" class="our-project__img"> 
+            <div class="our-project__slide"> <a href="javascript:void(0)" class="our-project__slide-link"><img src="img/people-exhibition.svg" alt="people on exhibition" class="our-project__img"> </a>
                 <div class="our-project__signature">
                     <div class="our-project__signature_title">ССК “ОЛИМП”</div> 
                     <div class="our-project__signature_subtitle">Световое оформление форума “Шубы-2019”</div> 
                 </div> 
             </div>
-            <div class="our-project__slide"><img src="img/people-concert.svg" alt="people on concert"> 
+            <div class="our-project__slide"><a href="javascript:void(0)" class="our-project__slide-link"><img src="img/people-concert.svg" alt="people on concert"> </a>
                 <div class="our-project__signature">
                     <div class="our-project__signature_title">ССК “ОЛИМП”</div> 
                     <div class="our-project__signature_subtitle">Световое оформление форума “Шубы-2019”</div>
                 </div> 
+            </div>
+        </div>
+    </section>
+    <section class="product-catalog section">
+        <div class="product-catalog__title">Каталог продукции</div>
+        <div class="product-catalog__subtitle">
+            <div class="product-catalog__item_active">Robe</div>
+            <div class="product-catalog__item_inactive">Compulite</div>
+        </div>
+        <div class="product-catalog__row">
+            <div class="product-catalog__column">
+                <img src="img/product.svg" alt="product" class="product-catalog__img">
+                <div class="product-catalog__signature"><div class="product-catalog__signature_title"> <a href="javascript:void(0)" class="product-catalog__signature_title-link">Статичные светодиодные приборы</a></div></div>
+            </div>
+            <div class="product-catalog__column">
+                <img src="img/product.svg" alt="product" class="product-catalog__img">
+                <div class="product-catalog__signature"><div class="product-catalog__signature_title"><a href="javascript:void(0)" class="product-catalog__signature_title-link">Контроллеры</a></div></div>
+            </div>
+            <div class="product-catalog__column">
+                <img src="img/product.svg" alt="product" class="product-catalog__img">
+                <div class="product-catalog__signature"><div class="product-catalog__signature_title"><a href="javascript:void(0)" class="product-catalog__signature_title-link">Аксессуары</a></div></div>
+            </div>
+        </div>
+    </section>
+    <section class="equipment-rent section">
+        <div class="equipment-rent__title">Аренда оборудования</div>
+        <div class="equipment-rent__content">
+            <div class="equipment-rent__container"> <div class="equipment-rent__text">Мы занимаемся прокатом светового и сценического оборудования ведущих мировых производителей, таких как Robe, SGM, StudioDue, ChainMaster, Milos, Universal Effects, ArtLighting, MobilTech, Lampo, Martin, Spotlight, Compulite, Eurolite и др.</div>
+            </div>
+            <div class="equipment-rent__slide">
+                <div class="equipment-rent__slide_title">Новое оборудование, предоставляемое в аренду:</div>
+                <div class="equipment-rent__slide_content">
+                    <a href="javascript:void(0)"><img src="img/product.svg" alt="Robe Robin Parfect 100" class="equipment-rent__slide_img"></a>
+                    <div class="equipment-rent__slide_description">
+                        <div class="equipment-rent__slide_subtitle"><a href="javascript:void(0)" class="equipment-rent__slide_subtitle-link">Robe robin parfect 100</a></div>
+                       <ul class="equipment-rent__item">
+                           <li class="equipment-rent__item_link"> Источник света 12 светодиодов RGBW по 15 Вт каждый</li>
+                           <li class="equipment-rent__item_link">Угол раскрытия 7&deg;</li>
+                           <li class="equipment-rent__item_link">В комплекте рассеивающая линза 40&deg;</li>
+                           <li class="equipment-rent__item_link">Потребляемая мощность 200 Вт</li>
+                       </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
