@@ -245,8 +245,7 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
-}
+ }
 .product-catalog__title{
     padding-top: 0;
 }
@@ -389,8 +388,7 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
-    border:1px solid black;
-}
+ }
 .equipment-rent__title{
     padding-top: 0;
     padding-bottom: 40px;
