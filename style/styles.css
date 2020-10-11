@@ -135,7 +135,7 @@ header {
     height: 520px;
 }
 
-.our-project__title {
+.title, .our-project__title {
     font-family: Oswald;
     font-style: normal;
     font-weight: normal;
@@ -157,7 +157,7 @@ header {
     /* преобразуем его в блочный */
     position: absolute;
     /* включаем асболютное позиционирование */
-    top: 24px;
+    top: 21px;
     /*отступ будет 0 пикселей от верхней точки блока */
     width: 100px;
     /* блок займёт по ширине 10% ширины родительского */
@@ -173,7 +173,7 @@ header {
     content: "";
     display: block;
     position: absolute;
-    top: 37px;
+    top: 34px;
     width: 50px;
     left: 50px;
     height: 3px;
@@ -245,31 +245,19 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
+    border: 1px solid black;
 }
-
-.product-catalog__title {
-    font-family: Oswald;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 44px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    /* black */
-    color: #343434;
-    padding-bottom: 70px;
-    padding-left: 140px;
-    padding-top: 6px;
+.product-catalog__title{
+    padding-top: 0;
 }
-
-.product-catalog__title::before {
+.title::before {
     content: "";
     /* создаём инлайн объект */
     display: block;
     /* преобразуем его в блочный */
     position: absolute;
     /* включаем асболютное позиционирование */
-    top: 24px;
+    top: 15px;
     /*отступ будет 0 пикселей от верхней точки блока */
     width: 100px;
     /* блок займёт по ширине 10% ширины родительского */
@@ -281,17 +269,16 @@ header {
 
 }
 
-.product-catalog__title::after {
+.title::after {
     content: "";
     display: block;
     position: absolute;
-    top: 37px;
+    top: 28px;
     width: 50px;
     left: 50px;
     height: 3px;
     background: #005BC1;
 }
-
 .product-catalog__subtitle {
     display: flex;
     justify-content: center;
@@ -349,26 +336,30 @@ header {
 }
 
 .product-catalog__img {
-    width: 350px;
-    height: 300px;
+    width: 344px;
+    height: 294px;
 }
 
 .product-catalog__column {
     border: 3px solid #005BC1;
-    flex: 1 1 auto;
-    margin: 0 30px;
     position: relative;
+    width: 344px;
+    height: 294px;
+    margin-right: 27px;
+}
+
+.product-catalog__column:last-child {
+    margin-right: 0;
 }
 
 .product-catalog__row {
     display: flex;
     flex-direction: row;
-    margin: 0 -30px;
 }
 
 .product-catalog__signature {
     position: absolute;
-    width: 265px;
+    width: 259px;
     height: 86px;
     left: 85px;
     top: 199px;
@@ -398,53 +389,12 @@ header {
     position: relative;
     display: flex;
     flex-direction: column;
+    border:1px solid black;
 }
-
-.equipment-rent__title {
-    font-family: Oswald;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 44px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    /* black */
-    color: #343434;
+.equipment-rent__title{
+    padding-top: 0;
     padding-bottom: 40px;
-    padding-left: 140px;
-    padding-top: 6px;
 }
-
-.equipment-rent__title::before {
-    content: "";
-    /* создаём инлайн объект */
-    display: block;
-    /* преобразуем его в блочный */
-    position: absolute;
-    /* включаем асболютное позиционирование */
-    top: 24px;
-    /*отступ будет 0 пикселей от верхней точки блока */
-    width: 100px;
-    /* блок займёт по ширине 10% ширины родительского */
-    height: 3px;
-    /* высота самого блока */
-    background: #005BC1;
-    /* задаём нужный цвет фоном */
-    left: 0;
-
-}
-
-.equipment-rent__title::after {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 37px;
-    width: 50px;
-    left: 50px;
-    height: 3px;
-    background: #005BC1;
-}
-
 .equipment-rent__content {
     display: flex;
 }
@@ -470,6 +420,8 @@ header {
 .equipment-rent__slide {
     border: 3px solid #005BC1;
     position: relative;
+    width: 659px;
+    height: 388px;
 }
 
 .equipment-rent__slide_title {
