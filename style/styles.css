@@ -2,7 +2,9 @@ a {
     text-decoration: none;
     color: white;
 }
-
+body{
+    min-width: 1130px;
+}
 .header__content {
     background: url('../img/concert.png') no-repeat 50%/cover;
     width: 100%;
@@ -664,7 +666,7 @@ a {
     display: flex;
     align-items:center;
     padding-top: 0;
-    position: ;
+    
 }
 
 /*--------------------------------------------------------------------------- footer style----------------------------------------------------------------- */
